@@ -1,4 +1,4 @@
-package com.rohfl.imageuploder.handler;
+package com.rohfl.imageuploder.exception.handler;
 
 import com.rohfl.imageuploder.exception.InvalidRequestException;
 import org.springframework.http.HttpStatus;

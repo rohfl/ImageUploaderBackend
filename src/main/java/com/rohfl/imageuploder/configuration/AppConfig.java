@@ -3,6 +3,7 @@ package com.rohfl.imageuploder.configuration;
 import com.rohfl.imageuploder.client.FileUploadClient;
 import com.rohfl.imageuploder.client.FirebaseClient;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,6 +22,11 @@ public class AppConfig {
   @Bean
   public FileUploadClient fileUploadClient() {
     return new FirebaseClient(firebaseBucketName, firebaseFileBaseUrl);
+  }
+
+  @Bean
+  public ErrorProperties errorProperties() {
+    return new ErrorProperties();
   }
 
 }

@@ -1,11 +1,9 @@
 package com.rohfl.imageuploder.exception;
 
-import javax.xml.bind.ValidationException;
-
 /**
  * Created by rohfl on 06-11-2022
  **/
-public class InvalidRequestException extends ValidationException {
+public class InvalidRequestException extends RuntimeException {
 
   String message;
 
