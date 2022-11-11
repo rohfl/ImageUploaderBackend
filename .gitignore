@@ -36,4 +36,4 @@ out/
 ### VS Code ###
 .vscode/
 
-src/main/resources/gservices.json
+src/main/resources/google_services.json
